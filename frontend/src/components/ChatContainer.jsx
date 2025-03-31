@@ -44,6 +44,17 @@ const ChatContainer = ({
           </div>
         )}
 
+        <div className="text-xs flex justify-end gap-1">
+          <span className="text-zinc-400">powered by</span>
+          <a
+            href="https://www.centonis.com"
+            target="_blank"
+            className="text-zinc-800"
+          >
+            centonis
+          </a>
+        </div>
+
         {messages.map((msg, index) => (
           <Message
             key={index}

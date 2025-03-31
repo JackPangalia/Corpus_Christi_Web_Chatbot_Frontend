@@ -30,7 +30,7 @@ const Message = ({ messageType, message }) => {
           </span>
         </div>
       )}
-      <div className='markdown'>
+      <div className='react-markdown'>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{cleanedMessage}</ReactMarkdown>
       </div>
     </div>

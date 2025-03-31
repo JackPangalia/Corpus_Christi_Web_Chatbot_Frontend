@@ -22,14 +22,14 @@ const useChat = () => {
   // Define initial suggestions
   //! Replace with your own initial suggestions
   const INITAL_SUGGESTIONS = [
-    "What AI solutions do you offer?",
-    "How does your chatbot development process work?",
-    "Can you explain how AI agents improve business efficiency?",
+    "How do I apply to Corpus Christi College?",
+    "What programs and courses do you offer?",
+    "What are the tuition fees and financial aid options?",
   ];
 
   //! Replace with your own initial message
   const INITIAL_MESSAGE =
-    "👋 Welcome to Centonis! We're experts in AI consulting, chatbot development, and AI agents. Ask me anything about our services, AI solutions, or how we can help your business. I'm here to assist you!";
+    "Hi there! 👋 I'm the Corpus Christi College Virtual AI Assistant, here to help you navigate programs, admissions, tuition, campus life, and more. Ask me anything, and let's find the info you need!";
   // Initialize suggestions state with default suggestions
   const [suggestions, setSuggestions] = useState(INITAL_SUGGESTIONS);
 

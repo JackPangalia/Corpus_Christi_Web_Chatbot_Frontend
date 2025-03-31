@@ -41,7 +41,7 @@ const useSocketConnection = ({
     setSocket(newSocket);
 
     // Attempt to resume a previous session or initialize a new one
-    const savedSessionId = getItem("chatSessionId");
+    const savedSessionId = getItem("chatSessionId");                                  
     if (savedSessionId) {
       newSocket.emit("resume_session", { sessionId: savedSessionId });
     } else {
