@@ -32,11 +32,16 @@ const useSocketConnection = ({
 
   useEffect(() => {
     console.log("Connecting to Socket.IO server...");
-    const newSocket = io("http://localhost:3001", {
+    const newSocket = io("https://corpus-christi-web-chatbot-fb496d9150fe.herokuapp.com/", {
       reconnection: true,
       reconnectionAttempts: 5,
       reconnectionDelay: 1000,
-    });
+      transports: ['websocket', 'polling'],
+      withCredentials: true,
+      extraHeaders: {
+        "Origin": "https://jackpangalia.github.io"
+      }
+    })
 
     setSocket(newSocket);
 
